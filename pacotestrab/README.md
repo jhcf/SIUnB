@@ -1,16 +1,18 @@
 # Pacotes de trabalho
 Cada pasta contém os trabalhos individualmente desenvolvidos pelos membros do projeto, cujos nomes correspondem aos seus usernames git.
 
-Arquivos usados para apoiar a especificação dos pacotes de trabalho estão na pasta especificacao
-Os resultados iniciais dos pacotes de trabalho #2, #3, #4 e #5 devem ser depositados até as 10h do dia 26/11
+Arquivos usados para apoiar a especificação dos pacotes de trabalho estão na pasta especificacao.
+
+Os resultados iniciais dos pacotes de trabalho #2, #3, #4 e #5 devem ser depositados até as 10h do dia 26/11.
+
 Segue uma especificação de cada pacote.
 
-#1 - PACOTE TRAB #1 - MEMBRO M1 DO PROJETO - GUIA DO USUÁRIO
+# 1 - PACOTE TRAB #1 - MEMBRO M1 DO PROJETO - GUIA DO USUÁRIO
 
-#Responsável
+# Responsável
 O membro M1 é o aluno Ricardo Silva Moreira.
 
-##Casos de uso a realizar
+## Casos de uso a realizar
 O pacote de trabalho #1 visa desenvolver os artefatos que apoiam o usuário na realização dos seguintes casos de uso:
 ### UC1
 Usuário responsável por um espaço cultural cria e mantém na Wikidata um registro uma edificação ou espaço físico de interesse cultural  
@@ -21,7 +23,7 @@ Usuário responsável por um evento cria ou atualiza o registro do evento da Wik
 ### UC7
 Usuário de uma mídia social faz registros de comentários sobre um evento no facebook, youtube etc, que podem ser usados para promover a visibilidade e avaliação do evento
 
-##Entregáveis
+## Entregáveis
 O membro M1 do projeto não desenvolverá programas de computadores.
 Ele produzirá um Guia do Usuário, formado por um conjunto de artefatos na forma de documentos com texto, gráficos e imagens.
 Podem ser desenvolvidos documentos em texto e em vídeo. 
@@ -33,51 +35,51 @@ e que precisa usar minimanente o OpenStreetMap e o Wikidata para fazer os regist
 OpenStreetMap: https://wiki.openstreetmap.org/wiki/Pt-br:Beginners%27_guide
 Wikidata: 
 
-##Formato da entrega
+## Formato da entrega
 Para a produção do texto, deve-ser usar o editor de texto LaTeX, usando o repositório de documento LaTeX sincronizado com o Overleaf em 
 https://github.com/jhcf/SIUnB.2020.1.TA-Relatorio
 
 Para a produção de vídeos, deve-se colocar os mesmos disponíveis no youtube, informando o link dos mesmos no documento texto Guia do Usuário
 
-#2 - PACOTE TRAB #2 - MEMBRO M2 DO PROJETO
+# 2 - PACOTE TRAB #2 - MEMBRO M2 DO PROJETO
 
-#Responsável
+# Responsável
 M2 é Mateus Luiz Oliveira.
 
-##Descrição
+## Descrição
 O pacote de trabalho #2 visa desenvolver o SCRIPT 1 para realizar o UC4.
 
-###UC4 
+### UC4 
 Usuário final do sistema usa o front-end para buscar uma lista de eventos relacionados a uma edificação ou organização no sistema de fruição cultural, que apresenta o resultado da busca numa interface (textual ou gráfica), listando o conjunto dos eventos ocorridos ou ocorrer na edificação ou próximos a ela, (possívelmente ranqueados, ver UC9)
 
-##Experiência e interface com o usuário
+## Experiência e interface com o usuário
 Ver detalhamento do documento Prototipo_v4.pdf ou Prototipo_v4.odp, disponível no Overleaf.
 
-##Entregáveis
-###Script1.py
+## Entregáveis
+### Script1.py
 
-##Formato da entrega
+## Formato da entrega
 Script em python3.9 que recebe como entrada um nome de edificação e retorna a lista sequencialmente numerada de eventos ocorridos ou a ocorrer na edificação, conforme os registros disponíveis no OpenStreetMap e Wikidata.
 
-#3 - PACOTE TRAB #3 - MEMBRO M3M5 DO PROJETO
-#Responsável
+# 3 - PACOTE TRAB #3 - MEMBRO M3M5 DO PROJETO
+# Responsável
 M3M5 é Daniel Carvalho Moreira.
 
-##Descrição
+## Descrição
 O pacote de trabalho #2 visa desenvolver o SCRIPT 2 para realizar o UC5
-###UC5 
+### UC5 
 Usuário final usa o front-end, informa o nome da a edificação ou organização anteriormente usado no UC4, e acrescenta na busca o número sequencial do evento específico no qual tem interesse, por exemplo, o 5o evento da lista retornado no UC4. 
 O front-end apresenta na interface textual (adicionamente uma janela gráfica) com o detalhamento dos dados do evento específico solicitado, inclusive URLs para mídias sociais que contenham maior descrição do evento, se for o caso.
 Adicionalmente, é apresentada uma síntese dos comentários registrados na mídia social relativos ao evento, conforme detalha o UC8.
 
-##Experiência e interface com o usuário
+## Experiência e interface com o usuário
 Ver detalhamento do documento Prototipo_v4.pdf ou Prototipo_v4.odp, disponível no Overleaf.
 
-##Entregáveis
-###Script2_linha.py
+## Entregáveis
+### Script2_linha.py
 Script que recebe como entrada uma URL de vídeo, faz acesso à API do Youtube, retorna um string com 4+n*3 linhas, contendo a síntese dos n feedbacks recebidos sobre o vídeo, conforme o modelo a seguir descrito, composto pelas seguintes linhas, gerando um dataset a ser gravado no disco em um arquivo com nome no formato: <identificador-do-video>.txt, por exemplo: R-1ndCVLCLk.txt.
 
-####Estrutura de um dataset de um vídeo
+#### Estrutura de um dataset de um vídeo
 Linha 1 ::= url do vídeo
 Linha 2 ::= "views "+Quantidade de visualizações do vídeo
 Linha 3 ::= "likes "+Quantidade de likes para o vídeo
@@ -86,7 +88,7 @@ Linha 5+n*3 ::= Nome do usuário que realizou o n-ésimo comentário mais recent
 Linha 5+n*3+1 ::= Tempo decorrido desde que o n-ésimo comentário mais recente foi realizado
 Linha 5+n*3+2 ::= Texto do n-ésimo comentário mais recente
 
-####Exemplo de um dataset de um vídeo
+#### Exemplo de um dataset de um vídeo
 http://www.youtube.com/watch?v=R-1ndCVLCLk
 views 3.000
 likes 200
@@ -104,58 +106,55 @@ Eleakim Silva
 3 semanas atrás
 Faltou fazer mais perguntas, mas tá show
 
-###Script2.py
+### Script2.py
 Integração entre o Script1.py e Script2_linha.py, que realiza o UC5 
 
-##Formato da entrega
+## Formato da entrega
 Script em python3.9
 Thales Grilo
  
-
-#4 - PACOTE TRAB #4 - MEMBRO M4 DO PROJETO
-#Responsável
+# 4 - PACOTE TRAB #4 - MEMBRO M4 DO PROJETO
+# Responsável
 M4 é Thales Grilo
 
-#Descrição
+# Descrição
 O pacote de trabalho #4 visa desenvolver o Script3.py, que realiza o UC6
-###UC6 
+## UC6 
 Usuário final usa o front-end para obter detalhamento de um dos eventos que ocorreu ou vai ocorrer vinculado a uma edificação de interesse cultural, e apresenta uma síntese dos comentários de feedback relacionados a esse evento na forma de uma nuvem de palavras, gerada a partir do texto dos comentários feitos nas mídias sociais, e aciona automaticamente um dos links da lista de links relativa ao evento numa mídia social, como o youtube, de modo que o navegador do usuário é direcionado para a página do evento na mídia social.
 
-##Experiência e interface com o usuário
+## Experiência e interface com o usuário
 Ver detalhamento do documento Prototipo_v4.pdf ou Prototipo_v4.odp, disponível no Overleaf.
 
-##Entregáveis
-###3 Datasets exemplos
+## Entregáveis
+### 3 Datasets exemplos
 Gerar três arquivos com datasets reais, para testar o gerador de wordcloud, produzidos a partir de vídeos reais no youtube, conforme a estrutura de dataset descrita no pacote de trabalho #3. Os nomes dos arquivos devem ser <identificador-do-video>.txt, por exemplo: R-1ndCVLCLk.txt.
 
-###Script3_linha.py
+### Script3_linha.py
 Script que recebe um identificador de um vídeo, por exemplo, "R-1ndCVLCLk", e apresenta uma janela pop-up com a nuvem de palavras relativas aos comentários de um vídeo específico, a partir da leitura de um dos três datasets gerados, e dispara o navegador do usuário para visitar esse vídeo no youtube, por exemplo: http://www.youtube.com/watch?v=R-1ndCVLCLk.
 
-###Script3.py
+### Script3.py
 Integração entre o Script2.py e o Script3_linha.py.
 
-#5 PACOTE TRAB #5 - MEMBRO M6 DO PROJETO 
+# 5 PACOTE TRAB #5 - MEMBRO M6 DO PROJETO 
 #Responsável
 M6 é Fernado Cordeiro
 
-#Descrição
+# Descrição
 O pacote de trabalho #5 visa desenvolver o Script4.py, que realiza o UC9
 
-###UC9
+## UC9
 Usuário final usa o front-end para obter uma listagem dos eventos que irão ocorrer ou ocorreram vinculado a uma edificação de interesse cultural, conforme o UC4. Adicionalmente, as listas dos eventos, agrupados nas três distintas catogorias, são ranqueadas conforme um algoritmo de ranqueamento desenvolvido a partir da análise dos feedbacks recebidos para cada evento, conforme esses feedbacks são recuperados a partir da API do youtube. Existem várias formas de ranqueamento, sendo a mais simples delas o ranqueamento pela quantidade de comentários recebidos. Devem ser exploradas pelo menos duas formas de ranqueamento.
 
-##Experiência e interface com o usuário
+## Experiência e interface com o usuário
 Ver detalhamento do documento Prototipo_v4.pdf ou Prototipo_v4.odp, disponível no Overleaf.
 
-##Entregáveis
-###Script4_linha.py
+## Entregáveis
+### Script4_linha.py
 Recebe um nome de diretório contendo um conjunto de datasets sumários de eventos e os processa gerando um raqueamento, sejam os datasets gerados manualmente no pacote de trabalho #4, sejam os datasets gerados automaticamente pelo Script2_linha.py, no pacote de trabalho #3.
 
-###Script4.py
+### Script4.py
 Resultado da integração entre os scripts Script4_linha.py, Script1.py e Script2_linha.py, para produzir uma saída análoga à gerada no UC4, só que ranqueada conforme o modelo de ranqueamento criado.
 
 ### Orientações
 No início, usar os três datasets desenvolvidos no pacote de trabalho #4 para testar as distintas formas de ranqueamento (pelo menos duas).
 Avaliar o uso de técnicas de text mining.
-
-
