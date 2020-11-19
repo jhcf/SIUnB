@@ -80,6 +80,7 @@ Ver detalhamento do documento Prototipo_v4.pdf ou Prototipo_v4.odp, disponível 
 Script que recebe como entrada uma URL de vídeo, faz acesso à API do Youtube, retorna um string com 4+n*3 linhas, contendo a síntese dos n feedbacks recebidos sobre o vídeo, conforme o modelo a seguir descrito, composto pelas seguintes linhas, gerando um dataset a ser gravado no disco em um arquivo com nome no formato: <identificador-do-video>.txt, por exemplo: R-1ndCVLCLk.txt. Veja exemplo de arquivo incompleto em [especificacao/ExemploDataset/R-1ndCVLCLk.txt](especificacao/ExemploDataset/R-1ndCVLCLk.txt).
 
 #### Estrutura de um dataset de um vídeo
+'''
 Linha 1 ::= url do vídeo
 Linha 2 ::= "views "+Quantidade de visualizações do vídeo
 Linha 3 ::= "likes "+Quantidade de likes para o vídeo
@@ -87,8 +88,10 @@ Linha 4 ::= "dislines "+Quantidade de dislikes para o vídeo
 Linha 5+n*3 ::= Nome do usuário que realizou o n-ésimo comentário mais recente
 Linha 5+n*3+1 ::= Tempo decorrido desde que o n-ésimo comentário mais recente foi realizado
 Linha 5+n*3+2 ::= Texto do n-ésimo comentário mais recente
+'''
 
 #### Exemplo de um dataset de um vídeo
+'''
 http://www.youtube.com/watch?v=R-1ndCVLCLk
 views 3.000
 likes 200
@@ -105,6 +108,7 @@ Fera demais!!!
 Eleakim Silva
 3 semanas atrás
 Faltou fazer mais perguntas, mas tá show
+'''
 
 ### Script2.py
 Integração entre o Script1.py e Script2_linha.py, que realiza o UC5 
