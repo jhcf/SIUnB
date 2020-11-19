@@ -77,7 +77,7 @@ Ver detalhamento do documento Prototipo_v4.pdf ou Prototipo_v4.odp, disponível 
 
 ## Entregáveis
 ### Script2_linha.py
-Script que recebe como entrada uma URL de vídeo, faz acesso à API do Youtube, retorna um string com 4+n*3 linhas, contendo a síntese dos n feedbacks recebidos sobre o vídeo, conforme o modelo a seguir descrito, composto pelas seguintes linhas, gerando um dataset a ser gravado no disco em um arquivo com nome no formato: <identificador-do-video>.txt, por exemplo: R-1ndCVLCLk.txt.
+Script que recebe como entrada uma URL de vídeo, faz acesso à API do Youtube, retorna um string com 4+n*3 linhas, contendo a síntese dos n feedbacks recebidos sobre o vídeo, conforme o modelo a seguir descrito, composto pelas seguintes linhas, gerando um dataset a ser gravado no disco em um arquivo com nome no formato: <identificador-do-video>.txt, por exemplo: R-1ndCVLCLk.txt. Veja exemplo de arquivo incompleto em [especificacao/ExemploDataset/R-1ndCVLCLk.txt](especificacao/ExemploDataset/R-1ndCVLCLk.txt).
 
 #### Estrutura de um dataset de um vídeo
 Linha 1 ::= url do vídeo
