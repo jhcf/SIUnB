@@ -24,13 +24,16 @@ def build_headers(video_id):
     r = requests.get(url) 
     s = BeautifulSoup(r.text, "html.parser") 
 
-    tag = s.find("div", class_="watch-view-count")
+    # tag = s.find("span", class_="view-count")
+    tag = s.select("span.view-count")
     views = tag.text if tag else 0
+    # print("span.view-count is empty") if (not tag)
 
-    tag = s.find("span", class_="like-button-renderer")
-    likes = tag.span.button.text if tag else 0
+    # tag = s.find("yt-formatted-string", class_="ytd-toggle-button-renderer")
+    tag = s.select("yt-formatted-string#text")
+    likes = tag.text if tag else 0
+    # print("yt-formatted-string#text is empty") if (not tag)
  
-    # return { 'url': url, 'views': views, 'likes': likes }
     return f'{url}\nviews {views}\nlikes {likes}\n'
 
 def process_comment(comment_data):
@@ -45,8 +48,6 @@ def process_comments(video_id):
     # Escrever Headers
     with open(file_out, "w") as output_file:
         headers = build_headers(video_id)
-        # headerstring = f'{headers["url"]}\nviews {headers["views"]}\nlikes {headers["likes"]}'
-        # print(headers)
         output_file.write(headers);
 
 
