@@ -18,23 +18,28 @@ def create_parents(filename):
             os.makedirs(outdir)
 
 def process_comment(comment_data):
-    return
+    data = json.loads(comment_data)
+    return f'{data["author"]}\n{data["text"]}\n{data["time"]}\n'
 
 def process_comments(video_id):
     file_in = f'dataset/{video_id}.json'
     file_out = f'dataset/{video_id}.txt'
     create_parents(file_out)
 
-    # with (open(file_in), open(file_out, "w")) as (input_file, output_file):
+    # Escrever Headers
+    with open(file_out, "w") as output_file:
+        print("creating headers")
+
+
+    # Escrever Comentários
     with open(file_in) as input_file:
-        lines = [];
-        line = input_file.readline()
-        print("")
-        while line:
-            data = json.loads(line);
-            line = f'{data["author"]}\n{data["text"]}\n{data["time"]}\n'
-            print(line)
-            line = input_file.readline()
+        with open(file_out, "a") as output_file:
+            comment = input_file.readline()
+            while comment:
+                line = process_comment(comment)
+                print(line)
+                output_file.write(line)
+                comment = input_file.readline()
             
     input_file.close()
     # output_file.close()
