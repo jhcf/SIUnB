@@ -115,7 +115,6 @@ Integração entre o Script1.py e Script2_linha.py, que realiza o UC5
 
 ## Formato da entrega
 Script em python3.9
-Thales Grilo
  
 # 4 - PACOTE TRAB #4 - MEMBRO M4 DO PROJETO
 # Responsável
@@ -162,3 +161,32 @@ Resultado da integração entre os scripts Script4_linha.py, Script1.py e Script
 ### Orientações
 No início, usar os três datasets desenvolvidos no pacote de trabalho #4 para testar as distintas formas de ranqueamento (pelo menos duas).
 Avaliar o uso de técnicas de text mining.
+
+
+# 3 - PACOTE TRAB #6 - MEMBRO M6 DO PROJETO
+# Responsável
+M6 é Mikael Melo.
+
+## Descrição
+O pacote de trabalho #6 visa desenvolver o SCRIPT 5 para realizar uma modificação do UC5, onde o twitter é a fonte de informação dos comentários sobre o evento
+
+### UC5-Twitter
+Usuário final usa o front-end, informa o nome da edificação ou organização anteriormente usada no UC4, e acrescenta na busca o número sequencial do evento específico no qual tem interesse, por exemplo, o 5o evento da lista retornado no UC4. 
+O front-end apresenta na interface textual (adicionamente uma janela gráfica) um detalhamento dos dados do evento específico solicitado, inclusive URLs para mídias sociais que contenham maior descrição do evento, se for o caso.
+Se entre as URLs do evento, existe uma vinculada ao twitter, então é apresentada uma síntese dos comentários registrados na mídia social Twitter, relativos ao evento, conforme detalha o UC8.
+
+## Experiência e interface com o usuário
+Ver detalhamento do documento Prototipo_v4.pdf ou Prototipo_v4.odp, disponível no Overleaf.
+
+## Entregáveis
+### Script5_linha.py
+Script que recebe como entrada uma URL de um tweet ou de um usuário, faz acesso à API do Youtube, retorna:
+* caso a url seja de um usuário, uma lista dos textos dos tweets mais recentes desse usuário (tweets da última semana);
+* caso a url seja de um tweet, uma lista dos textos de todos os comentários feitos sobre esse tweet;
+Usando essa lista de textos, o script deve apresentar numa janela pop-up uma nuvem de palavras sintetizando os textos, bem como no console deve ser apresentada a lista dos textos correspondentes, usados na produção da novem.
+
+### Script5.py
+Integração entre o Script1.py e Script5_linha.py, que realiza o UC5-Twitter 
+
+## Formato da entrega
+Script em python3.9
