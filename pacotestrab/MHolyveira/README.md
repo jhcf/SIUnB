@@ -14,7 +14,7 @@ get_location("teatro aca") #Retorna Q66942004 (Conjunto dos edifícios da Associ
 
 get_events("Q102104636") #Retorna os eventos relacionados ao Q102104636 em formato JSON
 ```
-O Script.py usa as 2 funções aninhadas:
+O Script1.py usa as 2 funções aninhadas:
 
 ```mermaid
 location = get_location("teatro de arena") 
