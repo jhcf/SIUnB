@@ -1,5 +1,5 @@
 
-from yutube_statistics import YTstats
+from youtube_statistics import YTstats
 import sys
 
 API_KEY = "AIzaSyC7uFOM9ULrHPEihKHwJk4Oc0YKUPcdLA4"
