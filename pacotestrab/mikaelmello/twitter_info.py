@@ -34,9 +34,8 @@ class TwitterWrapper:
         since_id = int(tweet_id)
         max_id = None
         while True:
-            results = self.search(query, since_id=since_id, max_id=max_id)
+            results = self.search(query, count=500, since_id=since_id, max_id=max_id)
 
-            dirty = False
             for result in results:
                 if not max_id or max_id >= result.id:
                     max_id = result.id - 1
@@ -44,11 +43,10 @@ class TwitterWrapper:
                 if result.in_reply_to_status_id_str == tweet_id:
                     result.text = re.sub(f"(^@{author_name} )", "", result.text)
                     replies.append(result)
-                    dirty = True
                 if len(replies) >= count:
                     break
 
-            if not dirty or len(replies) >= count:
+            if not results or len(replies) >= count or max_id <= since_id:
                 break
 
         return replies

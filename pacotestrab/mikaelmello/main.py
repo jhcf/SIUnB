@@ -83,7 +83,7 @@ if __name__ == "__main__":
         )
         tweet_id = matches.group(2)
 
-        replies = twitter.get_tweet_replies(tweet_id, 10)
+        replies = twitter.get_tweet_replies(tweet_id, 20)
         for t in replies:
             print(f"@{t.author.screen_name}")
             print(t.text)
