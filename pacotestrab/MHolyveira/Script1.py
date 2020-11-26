@@ -3,10 +3,10 @@ import sys
 from fuzzywuzzy import fuzz
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-#Retorna o Código que do item mais parecido com a consulta
+#Retorna o Código do item mais parecido com a consulta
 def rank_names(name, dictItems):
     dictRank = {k:fuzz.ratio(name, v) for k,v in dictItems.items()}
-    
+
     return  max(dictRank, key=dictRank.get)
 
 #Faz o request SPARQL na API do Wikidata e retorna os valores em json
@@ -30,7 +30,7 @@ def get_events( location):
     '''
     return request_wikidata(query)
 
-#Retorna a localização data uma string de consulta ex: "Teatro de arena da UnB" retorna "Q101526639"
+#Retorna a localização dada uma string de consulta ex: "Teatro de arena da UnB" retorna "Q101526639"
 def get_location(search):
     search = search.lower()
     query = f'''
@@ -53,7 +53,7 @@ def get_location(search):
    
 search = "teatro de arena"
 
-location = get_location(search) #Teatro de arena da UnB
+location = get_location(search) 
 events = get_events(location)
 
 print(events)
