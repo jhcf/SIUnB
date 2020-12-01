@@ -3,7 +3,7 @@ from youtube_statistics import YTstats
 import sys
 import json
 
-API_KEY = "AIzaSyCoh2U0px_V0q6LWRBMJ93CWFkRO3J-cpc"
+API_KEY = "Sua API Key aqui"
 complete_video_id = sys.argv[1]
 num_comm = sys.argv[2]
 
