@@ -1,11 +1,6 @@
-import argparse
-import os
 import tweepy
-import sys
 import re
-import matplotlib.pyplot as plt
 from tweepy.models import User
-from wordcloud import WordCloud
 
 
 class TwitterWrapper:
