@@ -94,9 +94,15 @@ def search_promoter(event_details,get_event_code):
     return promoter_place 
 
 def return_promoter_place(code_wiki_promoter):
-    promoter = code_information_wiki(code_wiki_promoter)
-    return_final_promoter = promoter ["entities"] [code_wiki_promoter] ["labels"] ["pt-br"] ["value"]
+    try: 
+        promoter = code_information_wiki(code_wiki_promoter)
+        return_final_promoter = promoter ["entities"] [code_wiki_promoter] ["labels"] ["pt-br"] ["value"]
+
+    except:
+        print("promoter entrou aqui")
+        return_final_promoter = "Nao informado"
     #print(return_final_promoter)
+
     return return_final_promoter
 
 def find_social_links(event_details,get_event_code):
@@ -136,8 +142,6 @@ def get_event_details(place,wiki_data,ref_receive_number):
         promoter_final = return_promoter_place(find_promoter)
         links = find_social_links(event_detais,get_event_code)
         #print(event_detais)
-    
-    #print(event_name)
     return event_name,date_event,final_info_hours,promoter_final,links
 
 def main(): 
@@ -158,8 +162,8 @@ def main():
     #print('\n')
     wiki_data = code_information_wiki(wiki_code)
     #print(wiki_data)
+    info_list = get_event_details(wiki_code,wiki_data,ref_receive_number)
     try:
-        info_list = get_event_details(wiki_code,wiki_data,ref_receive_number)
         event = info_list[0]
         date = info_list[1]
         hour = info_list[2]
@@ -177,7 +181,7 @@ def main():
 
     except:
         print("Local: "  + local_event)
-        print("Evento: " + local_event)
+        print("Evento: " + event)
         print("Data: " + date)
         print("Hora: " + hour)
         print("Promotor: " + promoter)
@@ -186,13 +190,17 @@ def main():
             print(links[index])
 
     final_information_list = []
-    final_information_list.append(local_event)
-    final_information_list.append(event)
-    final_information_list.append(date)
-    final_information_list.append(hour)
-    final_information_list.append(promoter)
-    final_information_list.append(links)
-    write_json(final_information_list)
+    information_dict = {
+        "local_event": local_event,
+        "event": event,
+        "date": date,
+        "hour": hour,
+        "promoter": promoter,
+        "links:": links
+    }
+
+    final_information_list.append(information_dict)
+    write_json(final_information_list[0])
     write_txt(final_information_list)
 
 main()
