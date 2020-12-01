@@ -41,6 +41,19 @@ https://github.com/jhcf/SIUnB.2020.1.TA-Relatorio
 
 Para a produção de vídeos, deve-se colocar os mesmos disponíveis no youtube, informando o link dos mesmos no documento texto Guia do Usuário
 
+## Avaliação inicial feita pelo professor
+### UC3
+O conteúdo do guia sobre o UC 3 é crítico para o sucesso do projeto, e deve ser feito com a maior brevidade.
+
+### Demais casos de uso
+Os demais casos de uso ainda não descritos (UC4/UC9, UC5/UC8, UC6, e UC5-Twitter) deve ser citados no guia do usuário.
+
+### Apresentação inicial do sistema
+Uma apresentação inicial do sistema deve ser feita antes da apresentação dos casos de uso específicos. Tomar como base o que já se encontra no Protótipo_v4.pdf. 
+
+### Conceitos e justificativa para o sistema
+Devem ser feitos no documento de relato do projeto
+
 # 2 - PACOTE TRAB #2 - MEMBRO M2 DO PROJETO
 
 # Responsável
@@ -146,7 +159,7 @@ M6 é Fernado Cordeiro
 O pacote de trabalho #5 visa desenvolver o Script4.py, que realiza o UC9
 
 ## UC9
-Usuário final usa o front-end para obter uma listagem dos eventos que irão ocorrer ou ocorreram vinculado a uma edificação de interesse cultural, conforme o UC4. Adicionalmente, as listas dos eventos, agrupados nas três distintas catogorias, são ranqueadas conforme um algoritmo de ranqueamento desenvolvido a partir da análise dos feedbacks recebidos para cada evento, conforme esses feedbacks são recuperados a partir da API do youtube. Existem várias formas de ranqueamento, sendo a mais simples delas o ranqueamento pela quantidade de comentários recebidos. Devem ser exploradas pelo menos duas formas de ranqueamento.
+Usuário final usa o front-end para obter uma listagem dos eventos que irão ocorrer ou ocorreram vinculado a uma edificação de interesse cultural, conforme o UC4. Adicionalmente, as listas dos eventos, agrupados nas três distintas categorias, são ranqueadas conforme um algoritmo de ranqueamento desenvolvido a partir da análise dos feedbacks recebidos para cada evento, conforme esses feedbacks são recuperados a partir da API do youtube. Existem várias formas de ranqueamento, sendo a mais simples delas o ranqueamento pela quantidade de comentários recebidos. Devem ser exploradas pelo menos duas formas de ranqueamento.
 
 ## Experiência e interface com o usuário
 Ver detalhamento do documento Prototipo_v4.pdf ou Prototipo_v4.odp, disponível no Overleaf.
@@ -163,7 +176,7 @@ No início, usar os três datasets desenvolvidos no pacote de trabalho #4 para t
 Avaliar o uso de técnicas de text mining.
 
 
-# 3 - PACOTE TRAB #6 - MEMBRO M6 DO PROJETO
+# 3 - PACOTE TRAB #6 - UC5-Twitter - MEMBRO M6 DO PROJETO
 # Responsável
 M6 é Mikael Melo.
 
