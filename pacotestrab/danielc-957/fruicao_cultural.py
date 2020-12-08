@@ -1,10 +1,17 @@
+import re
 from SPARQLWrapper import SPARQLWrapper, JSON
 import json
 import sys
 from urllib.request import urlopen
 import requests
 import datetime
+import os
+from twitter_info import TwitterWrapper
 
+twitter = TwitterWrapper(
+    os.environ["TWITTER_KEY"],
+    os.environ["TWITTER_KEY_SECRET"],
+)
 
 WIKIDATA_URL = "https://www.wikidata.org"
 
@@ -108,10 +115,13 @@ def return_promoter_place(code_wiki_promoter):
 def find_social_links(event_details,get_event_code):
     try: 
         lenght_media = len(event_details ["entities"] [get_event_code] ["claims"] ["P31"] [0] ["references"])
+        if lenght_media > 0:
+            lenght_media = len(event_details ["entities"] [get_event_code] ["claims"] ["P31"] [0] ["references"] [0] ["snaks"] ["P854"] )
         count = 0
         links = []
+        
         while (count < lenght_media):
-            add_list = event_details ["entities"] [get_event_code] ["claims"] ["P31"] [0] ["references"] [count] ["snaks"] ["P854"] [0] ["datavalue"] ["value"]
+            add_list = event_details ["entities"] [get_event_code] ["claims"] ["P31"] [0] ["references"] [0] ["snaks"] ["P854"] [count] ["datavalue"] ["value"]
             links.append(add_list)
             count = count + 1
         return links
@@ -138,11 +148,35 @@ def get_event_details(place,wiki_data,ref_receive_number):
     else:    
         new_return_hours = return_hour (final_hours[0],final_hours[1])
         final_info_hours = new_return_hours[0] + " horas - " + new_return_hours[1] + " horas"
+    
+    try:
         find_promoter = search_promoter(event_detais,get_event_code)
         promoter_final = return_promoter_place(find_promoter)
-        links = find_social_links(event_detais,get_event_code)
+    except:
+        promoter_final = "Sem promotor"
+    
+    links = find_social_links(event_detais,get_event_code)
         #print(event_detais)
     return event_name,date_event,final_info_hours,promoter_final,links
+
+def print_twitter_comments(link):
+    matches = re.match("^https?:\/\/twitter\.com\/(\w+)(\/.*)?", link)
+    username = matches.group(1)
+
+    print(f"Twitter: @{username}")
+    tweets = twitter.get_user_tweets(username, count=5)
+
+    for t in tweets:
+        print(f"@{t.author.screen_name}")
+        print(t.text)
+        print(t.created_at.strftime("%d/%m/%Y, %H:%M:%S"))
+        print()
+
+def print_comments(link):
+    if link.find('twitter') != -1:
+        print_twitter_comments(link)
+    else:
+        print(link)
 
 def main(): 
     receive_number = sys.argv[2]
@@ -177,7 +211,7 @@ def main():
         print("Promotor: " + promoter)
         print("Comentarios obtidos nas midias sociais: ")
         for index in range(len(links)):
-            print(links[index])
+            print_comments(links[index])
 
     except:
         print("Local: "  + local_event)
