@@ -43,5 +43,6 @@ Aqui temos a integração do script4_linha, que envolve mineração de texto e r
 
 
 ### Executando o programa
+**Lembre de adicionar sua api-key na `main.py`**
 
 O script **main.py** pode ser executado através por meio de um terminal da seguinte forma: `python3 main.py`.
