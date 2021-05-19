@@ -127,6 +127,85 @@ O artefato retorna um json contendo todo o resultado da análise, da tipagem de 
 ### Pós-condições
 A análise e apresentação das informações sobre os grupos fica bem fácil de ser trabalhada de forma algoritmica, de modo que o scripr pode ser facilmente incorporado a um back-end ou front-end de aplicação.
 
+## 5.2020.2 - App Android Front-end para Fruição Cultural
+
+### Responsável
+Pedro
+
+### Objetivo 
+Desenvolver um app para android, usando qualquer tecnologia, que seja capaz de ler um qrcode referente a um objeto no OSM, e recuperar os dados de fruição cultural vinculados a esse objeto OSM.
+
+### Pré-condições
+O usuário dispõe de um smartphone que tem instalado o app
+
+### Passos de uso
+#### 1
+O usuário aciona o app e lê um QRCode
+
+#### 2
+Caso o QRCode seja relativo ao OSM, recupera o objeto OSM
+
+#### 3
+Verifica se existe um tag para a wikiversity nesse objeto OSM
+
+##### 3.1
+Se existir, recupera as informações relacionadas com as ações e itens de interesse cultural (Obtendo um json, que vai ser gerado pelo trabalho do Breno. usar uns json padronizados - exemplos feitos a mãO.
+
+#### 4
+Apresenta na interface com o usuário a lista dos eventos, serviços e itens disponíveis vinculados a um ou mais grupos que atuam junto àquele objeto OSM.
+
+#### 5
+Se o usuário clicar em um item dessa lista, são apresenatdos os detalhes do registro.
+
+### Pós-condições
+O usuário obtém maio informação sobre eventos que ocorre naquele local geográfico
+
+## 6.2020.2 - Rede Semântica
+
+### Responsável
+Rafael
+
+### Objetivo
+Dada uma lista de páginas de grupos na wikiversity, ou uma lista de objetos no OSM que contém links para a Wikidata, gerar uma representação da rede semântica usando a integração com gephi, ou com outro software de visualização de grafos. Fazer uma app web que produza o resultado. Referência para analisar: https://gist.github.com/UncleCJ/2408aef8eab09cc1da3404c5af43537b
+
+### Passos
+# 1
+O artefato recebe um JSON contendoas informações sobre grupos de promoção da fruição cultural 
+# 2
+Alternativas de impelemtação
+# 2.1 Alternativa 1
+O artefato gera um png com o grafo dos objetos semânticos Wikidata vinculados ao JSON obtido.
+# 2.2 Alternativa 2 (caso viável)
+Apresentar uma interface web para navegação no grafo dos objetos semânticos Wikidata vinculados ao JSON obtido. Preferivelmente, a interface apresenta links para navegação, que apontam para os registros na wikidata.
+
+## 7.2020.2 - Create, Update, Delete para Informações sobre grupos na Wikiversidade
+
+### Responsável
+Yui
+
+### Objetivo
+Estudar a api wikimedia (https://www.mediawiki.org/wiki/API:Main_page) e criar um módulo de back end ou front-end para edição user-friendly de grupo e membros de grupo na Wikiversity, permitindo com facilidade, que os usuários possam definir descriçes de grupos, serviços, eventos e itens de acervo mantidos pelo grupo, bem como os seus usuários. As informações editadas seriam registradas nas correspondentes páginas do grupos na wikiversity.
+
+### Produtos
+1. protótiṕo / wireframe do módulo de gerenciamento de grupos
+2. implementação em python das fuções de gerenciamento (interface em json)
+
+### Pré-condições
+Os usuários do sistema que querem registrar informações sobre grupos, eventos, serviços e acervos tem que editar manualmente as informações na Wikiversity, o que torna o processo bastante sujeito a erros. Eles sentem falta de uma interface amigável e estruturada para entrada de dados, fazendo a criação de grupos, e a atualização ou remoção de uma ou mais informações.
+
+### Passos
+#### 1
+Usuário informa o grupo que quer editar ou criar
+
+#### 2
+Usuário insere ou edita informações sobre o grupo, usando uma interface mais amigável e menos sujeita a erros, mesmo que seja em uma linha de comando
+
+#### 3
+As informações são atualizadas na correspondente página da Wikiversidade
+
+### Pós-condições
+A qualidade dos dados sobre grupos mantidas na wikiversidade fica mais controlada, enquanto permitindo que o usuário continue a fazer a edição manual das páginas na wiki, caso queira fazer ajustes mais detalhados.
+
 
 
 # Pacotes de trabalho 2020.1
