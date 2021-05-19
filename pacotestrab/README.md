@@ -70,7 +70,7 @@ Turma estuda o artefato disponivel, qu apresenta de forma didática e exemplar, 
 ### Pos-condição
 Turma sabe identificar o que precisa estar presente em uma documentação de caso de uso de um sistema de informação
 
-## 3.2020.2 - Mural Digital
+## 4.2020.2 - Mural Digital
 
 ### Responsável
 João victor
@@ -92,9 +92,9 @@ O artefato identifica os eventos que vão ocorrer em data próxima ao momento em
 #### 3
 O artefato sintetiza ou apresenta a visualizaço de um mapa com indicação do que vai ocorrer no dia ou na semana, em termos de eventos culturais, ou (e) serviços. Usar o QGIS? "mão na roda".
 
-## 4.2020.2 - Analisador de Páginas da Wikiversity
+## 5.2020.2 - Analisador de Páginas da Wikiversity
 
-### Responsáve
+### Responsável
 Breno
 
 ### Objetivo
@@ -127,7 +127,7 @@ O artefato retorna um json contendo todo o resultado da análise, da tipagem de 
 ### Pós-condições
 A análise e apresentação das informações sobre os grupos fica bem fácil de ser trabalhada de forma algoritmica, de modo que o scripr pode ser facilmente incorporado a um back-end ou front-end de aplicação.
 
-## 5.2020.2 - App Android Front-end para Fruição Cultural
+## 6.2020.2 - App Android Front-end para Fruição Cultural
 
 ### Responsável
 Pedro
@@ -160,7 +160,7 @@ Se o usuário clicar em um item dessa lista, são apresenatdos os detalhes do re
 ### Pós-condições
 O usuário obtém maio informação sobre eventos que ocorre naquele local geográfico
 
-## 6.2020.2 - Rede Semântica
+## 7.2020.2 - Rede Semântica
 
 ### Responsável
 Rafael
@@ -178,10 +178,10 @@ O artefato gera um png com o grafo dos objetos semânticos Wikidata vinculados a
 # 2.2 Alternativa 2 (caso viável)
 Apresentar uma interface web para navegação no grafo dos objetos semânticos Wikidata vinculados ao JSON obtido. Preferivelmente, a interface apresenta links para navegação, que apontam para os registros na wikidata.
 
-## 7.2020.2 - Create, Update, Delete para Informações sobre grupos na Wikiversidade
+## 8.2020.2 - Create, Update, Delete para Informações sobre grupos na Wikiversidade
 
 ### Responsável
-Yui
+Yuri
 
 ### Objetivo
 Estudar a api wikimedia (https://www.mediawiki.org/wiki/API:Main_page) e criar um módulo de back end ou front-end para edição user-friendly de grupo e membros de grupo na Wikiversity, permitindo com facilidade, que os usuários possam definir descriçes de grupos, serviços, eventos e itens de acervo mantidos pelo grupo, bem como os seus usuários. As informações editadas seriam registradas nas correspondentes páginas do grupos na wikiversity.
