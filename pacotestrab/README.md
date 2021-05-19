@@ -1,13 +1,137 @@
 # Pacotes de trabalho
-Cada pasta contém os trabalhos individualmente desenvolvidos pelos membros do projeto, cujos nomes correspondem aos seus usernames git.
+Cada pasta deste diretório contém os trabalhos individualmente desenvolvidos pelos membros do projeto nos semestres 2020.1 e 2020.2, cujos nomes correspondem aos seus usernames git.
 
 Arquivos usados para apoiar a especificação dos pacotes de trabalho estão na pasta especificacao.
 
-Os resultados iniciais dos pacotes de trabalho #2, #3, #4 e #5 devem ser depositados até as 10h do dia 26/11.
+Em 2020.1, os resultados iniciais dos pacotes de trabalho #2, #3, #4 e #5 foram depositados até as 10h do dia 26/11/2020.
+
+Em 2020.2, os resultados finais dos pacotes de trabalho devem ser depositados até as 10h do dia 25/05/2021.
 
 Segue uma especificação de cada pacote.
 
-# 1 - PACOTE TRAB #1 - MEMBRO M1 DO PROJETO - GUIA DO USUÁRIO
+# Pacotes de trabalho 2020.2
+
+Atribuição de responsabilidades individuais dos alunos e alunas pela realização dos caso e uso na arquitetura do sistema 
+
+## 1.2020.2 - Cloud Computing
+### Responsável
+William
+
+### Objetivo
+Desenvolver um conjunto de instruções detalhadas sobre como fazer o uso de uma plataforma de cloud computing para gerenciar melhor o back end das aplicações desenvolvidas no âmbito dos projetos. Em suma, prova de conceito de como usar infraestrutura de cloud para apoiar o projeto.
+
+### Caso de Uso: Cloud Computing
+#### Pré-condições
+Professor e turma tem dificuldades para gerenciar os back-ends desenvolvidos durante o projeto.
+
+#### Uso dos artefatos
+Estudando os artefatos desenvolvidos, professor e turma aprender a gerenciar ambiente de máquinas virtuais que dão suporte à execução do back-end das aplicações desenvolvidas.
+
+#### Pós-condiçao
+Se torna facilitada a criação de back-ends demonstrativos de como o sistema pode funcionar.
+
+## 2.2020.2 - Calendário da Fruição Cultural
+### Responsável
+Lucas
+
+### Objetivo 
+Criar um gerador de calendário para o sistema.
+
+### Caso de Uso: Calendário de Fruição Cultural
+
+#### Pré-condições
+Os usuários do sistema de fruição cultural tem dificuldades para gerenciar a grande quantidade e qualidade de eventos que vão ocorrer ao longo do calendário.
+
+#### Uso dos artefatos (como funciona):
+##### 1
+O usuário informa um conjunto de parâmettros
+##### 2
+O sistema faz a busca no OSM (com base em parâmetors geográficos), na Wikiversity (com base em parâmetros de itens ou serviços de interesse) e na Wikidata (com base em parâmetros de classificação semântica), por eventos de potencial interesse do usuário.
+#### 3
+O sistema gera um output no formato https://en.wikipedia.org/wiki/ICalendar, cujos eventos podem ser importados para uma agenda pessoal, ou grupal, ou global, do usuário.
+
+#### Pós-condições
+Uma lista de eventos relevantes pode ser facilmente registrada na agenda do usuário
+
+## 3.2020.2 - Documentação de um caso de uso do sistema
+### Responsável
+Ayssa
+
+### Objetivo
+Criação de uma documentação completa de um caso de uso significativo do sistema, usando o modelo proposto no capítulo 7 do livro do Schneider, em [https://www.ibm.com/developerworks/rational/library/content/legacy/parttwo/1000/0670/0670_Schneider_Ch07.pdf]
+
+### Pré-condição
+Turma não sabe como realiar uma documentação de um caso de uso, contendo os principais diagramas passíveis de uso
+
+### Uso do artefato
+#### 1
+Turma estuda o artefato disponivel, qu apresenta de forma didática e exemplar, como documentar um caso de uso
+
+### Pos-condição
+Turma sabe identificar o que precisa estar presente em uma documentação de caso de uso de um sistema de informação
+
+## 3.2020.2 - Mural Digital
+
+### Responsável
+João victor
+
+### Objetivo
+Fazer um projeto gráfico do mural digital, e um script para criar uma versão inicial do mural.
+
+### Pré-condição
+Um mural precisa ser gerado para ser exposto em uma área de grande circulação no Campus Darcy Ribeiro da UnB
+
+### Uso do artefato
+
+#### 1
+O artefato consulta o OSM para buscar todos os itens geográficos do campus darcy ribeiro
+
+#### 2 
+O artefato identifica os eventos que vão ocorrer em data próxima ao momento em que está gerando o mural digital
+
+#### 3
+O artefato sintetiza ou apresenta a visualizaço de um mapa com indicação do que vai ocorrer no dia ou na semana, em termos de eventos culturais, ou (e) serviços. Usar o QGIS? "mão na roda".
+
+## 4.2020.2 - Analisador de Páginas da Wikiversity
+
+### Responsáve
+Breno
+
+### Objetivo
+#### Original
+Criar um conjunto de funções / scripts na linguagem python que recebe o texto html de uma página na wikiversity que contenha os elementos semânticos definidos na arquitetura do Sistema de Fruição Cultural, para os grupos vinculados a essa página.
+#### Aprimorado
+Criar um conjunto de funções / scripts na linguagem python que recebe uma lista de nomes de páginas a wikiversity que contenha os elementos semânticos definidos na arquitetura do Sistema de Fruição Cultural para os grupos vinculados a essa página, e que gera uma representação sintética do conteúdo desses grupos, em um formato JSON.
+
+### Pré-condições
+Existe um conjunto de grupos cadastrados em páginas na Wikiversity em português, cada página com o seu próprio nome.
+
+### Uso do artefato
+
+# 1
+Os nomes das páginas referentes aos grupos são informados em uma lista de entrada
+
+# 2
+Os textos das páginas informadas são recuperados 
+
+# 3
+É analisada a completude (e possivelmente a consistência) dos dados obtidos, tais como:
+* descrição do grupo promovtor de ações culturais
+* presença, consistência e completude de dados sobre eventos promovidos pelo grupo
+* presença, consistência e completude de dados sobre serviços promovidos pelo grupo
+* presença, consistência e completude de dados sobre itens de acervo mantidos pelo grupo
+
+# 4
+O artefato retorna um json contendo todo o resultado da análise, da tipagem de dados, de forma a facilitar a análise de informações sobre o que o(s) grupo(s) está(ão) ofertando.
+
+### Pós-condições
+A análise e apresentação das informações sobre os grupos fica bem fácil de ser trabalhada de forma algoritmica, de modo que o scripr pode ser facilmente incorporado a um back-end ou front-end de aplicação.
+
+
+
+# Pacotes de trabalho 2020.1
+
+# 1.2020.1 - PACOTE TRAB #1 - MEMBRO M1 DO PROJETO - GUIA DO USUÁRIO
 
 # Responsável
 O membro M1 é o aluno Ricardo Silva Moreira.
@@ -54,7 +178,7 @@ Uma apresentação inicial do sistema deve ser feita antes da apresentação dos
 ### Conceitos e justificativa para o sistema
 Devem ser feitos no documento de relato do projeto
 
-# 2 - PACOTE TRAB #2 - MEMBRO M2 DO PROJETO
+# 2.2020.1 - PACOTE TRAB #2 - MEMBRO M2 DO PROJETO
 
 # Responsável
 M2 é Mateus Luiz Oliveira.
@@ -90,6 +214,7 @@ Ver detalhamento do documento Prototipo_v4.pdf ou Prototipo_v4.odp, disponível 
 
 ## Entregáveis
 ### Script2_linha.py
+
 Script que recebe como entrada uma URL de vídeo, faz acesso à API do Youtube, retorna um string com 4+n*3 linhas, contendo a síntese dos n feedbacks recebidos sobre o vídeo, conforme o modelo a seguir descrito, composto pelas seguintes linhas, gerando um dataset a ser gravado no disco em um arquivo com nome no formato: <identificador-do-video>.txt, por exemplo: R-1ndCVLCLk.txt. Veja exemplo de arquivo incompleto em [especificacao/ExemploDataset/R-1ndCVLCLk.txt](especificacao/ExemploDataset/R-1ndCVLCLk.txt).
 
 #### Estrutura de um dataset de um vídeo
@@ -129,7 +254,7 @@ Integração entre o Script1.py e Script2_linha.py, que realiza o UC5
 ## Formato da entrega
 Script em python3.9
  
-# 4 - PACOTE TRAB #4 - MEMBRO M4 DO PROJETO
+# 4.2020.1 - PACOTE TRAB #4 - MEMBRO M4 DO PROJETO
 # Responsável
 M4 é Thales Grilo
 
@@ -151,7 +276,7 @@ Script que recebe um identificador de um vídeo, por exemplo, "R-1ndCVLCLk", e a
 ### Script3.py
 Integração entre o Script2.py e o Script3_linha.py.
 
-# 5 PACOTE TRAB #5 - MEMBRO M6 DO PROJETO 
+# 5.2020.1 PACOTE TRAB #5 - MEMBRO M6 DO PROJETO 
 #Responsável
 M6 é Fernado Cordeiro
 
@@ -176,7 +301,7 @@ No início, usar os três datasets desenvolvidos no pacote de trabalho #4 para t
 Avaliar o uso de técnicas de text mining.
 
 
-# 3 - PACOTE TRAB #6 - UC5-Twitter - MEMBRO M6 DO PROJETO
+# 3.2020.1 - PACOTE TRAB #6 - UC5-Twitter - MEMBRO M6 DO PROJETO
 # Responsável
 M6 é Mikael Melo.
 
