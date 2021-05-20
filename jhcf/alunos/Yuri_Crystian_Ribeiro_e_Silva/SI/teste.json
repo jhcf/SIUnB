@@ -1,0 +1,304 @@
+{
+    "groups": [
+        {
+            "api": "Endere\u00e7o http da API de acesso programado aos dados do grupo, que deve retornar um JSON que adere a esse formato, por exemplo http://20.197.228.14:5000/",
+            "assets": [
+                {
+                    "category": [
+                        "uma",
+                        "lista",
+                        "de",
+                        "palavras-chave",
+                        "que",
+                        "descrevem",
+                        "o",
+                        "item"
+                    ],
+                    "description": "Aqui um descri\u00e7\u00e3o do item",
+                    "facebook": [
+                        "Lista,  possivelmente vazia, de p\u00e1ginas no facebook associadas diretamente a esse item do acervo"
+                    ],
+                    "instagram": [
+                        "Lista,  possivelmente vazia, de URLs para p\u00e1ginas do instagram, relacionadas a esse item do acervo"
+                    ],
+                    "name": "Aqui deve ser inserido o nome de um item ou ativo (asset) do acervo cultural mantido pelo grupo",
+                    "osm": [
+                        "Lista, possivelmente vazia, URLs para localiza\u00e7\u00f5es geogr\u00e1ficas mantidas no OpenStreetMap, relativas a esse item"
+                    ],
+                    "stream": [
+                        "Lista,  possivelmente vazia, de v\u00eddeos ou canais no stream, ligados a esse item do acervo"
+                    ],
+                    "teams": [
+                        "Lista,  possivelmente vazia, de URLs para locais de reuni\u00e3 no teams, ligados a esse item do acervo"
+                    ],
+                    "twitter": [
+                        "Lista,  possivelmente vazia, de tweets ou usu\u00e1rios vinculados a esse item do acervo"
+                    ],
+                    "usage": "Regras ou condi\u00e7\u00f5es de uso do item",
+                    "wikidata": [
+                        "Lista,  possivelmente vazia, de URLs para elementos sem\u00e2nticos associados ao item, presentes na Wikidada"
+                    ],
+                    "wikipedia": [
+                        "Lista,  possivelmente vazia, de URLs para p\u00e1ginas na Wikipedia que melhor descrevem ou categorizam o ativo"
+                    ],
+                    "youtube": [
+                        "Lista,  possivelmente vazia, de v\u00eddeos ou canais no youtube, ligados a esse item do acervo"
+                    ]
+                }
+            ],
+            "description": "Aqui apresente o texto da se\u00e7\u00e3o descri\u00e7\u00e3o, contida na p\u00e1gina do grup na Wikiversity",
+            "events": [
+                {
+                    "category": [
+                        "uma",
+                        "lista",
+                        "de",
+                        "palavras-chave",
+                        "que",
+                        "descrevem",
+                        "o",
+                        "evento"
+                    ],
+                    "days": [
+                        "Lista de datas nas quais o evento ser\u00e1 realizado",
+                        "2021-05-07",
+                        "2021-05-09"
+                    ],
+                    "description": "Descri\u00e7\u00e3o do evento, conforme a tabela",
+                    "facebook": [
+                        "Lista,  possivelmente vazia, de p\u00e1ginas no facebook associadas diretamente a esse evento"
+                    ],
+                    "instagram": [
+                        "Lista,  possivelmente vazia, de URLs para p\u00e1ginas do instagram, relacionadas a esse evento"
+                    ],
+                    "name": "Aqui insira o nome do evento, obtido na tabela",
+                    "osm": [
+                        "Lista, possivelmente vazia, URLs para localiza\u00e7\u00f5es geogr\u00e1ficas mantidas no OpenStreetMap, onde o evento ocorrer\u00e1"
+                    ],
+                    "stream": [
+                        "Lista,  possivelmente vazia, de v\u00eddeos ou canais no stream, ligados a esse evento"
+                    ],
+                    "teams": [
+                        "Lista,  possivelmente vazia, de URLs para locais de reuni\u00e3o no teams, ligados a esse evento"
+                    ],
+                    "twitter": [
+                        "Lista,  possivelmente vazia, de tweets ou usu\u00e1rios vinculados a esse evento"
+                    ],
+                    "usage": "Regras ou condi\u00e7\u00f5es de uso do servi\u00e7o",
+                    "wikidata": [
+                        "Lista,  possivelmente vazia, de URLs para elementos sem\u00e2nticos associados ao evento, presentes na Wikidada"
+                    ],
+                    "wikipedia": [
+                        "Lista,  possivelmente vazia, de URLs para p\u00e1ginas na Wikipedia que melhor descrevem ou categorizam o evento"
+                    ],
+                    "youtube": [
+                        "Lista,  possivelmente vazia, de v\u00eddeos ou canais no youtube, ligados a esse evento"
+                    ]
+                }
+            ],
+            "members": [
+                "Lista de URLs para p\u00e1ginas Web que descrevem os membros que fazem parte desse grupo"
+            ],
+            "name": "Aqui informe o t\u00edtulo da p\u00e1gina do grupo na Wikiversity",
+            "services": [
+                {
+                    "category": [
+                        "uma",
+                        "lista",
+                        "de",
+                        "palavras-chave",
+                        "que",
+                        "descrevem",
+                        "o",
+                        "servi\u00e7o"
+                    ],
+                    "days": [
+                        "Lista de dias da semana em que o servi\u00e7o \u00e9 realizado, com a seguinte codifica\u00e7\u00e3o: 1- domingo, 2 - segunda, ter\u00e7a - 3 etc",
+                        "3",
+                        "4"
+                    ],
+                    "description": "Aqui um descri\u00e7\u00e3o do servi\u00e7o",
+                    "facebook": [
+                        "Lista,  possivelmente vazia, de p\u00e1ginas no facebook associadas diretamente a esse servi\u00e7o"
+                    ],
+                    "instagram": [
+                        "Lista,  possivelmente vazia, de URLs para p\u00e1ginas do instagram, relacionadas a esse servi\u00e7o"
+                    ],
+                    "name": "Aqui deve ser inserido o nome de um servi\u00e7o de interesse cultural mantido pelo grupo",
+                    "osm": [
+                        "Lista, possivelmente vazia, URLs para localiza\u00e7\u00f5es geogr\u00e1ficas mantidas no OpenStreetMap, onde o servi\u00e7o \u00e9 ofertado"
+                    ],
+                    "stream": [
+                        "Lista,  possivelmente vazia, de v\u00eddeos ou canais no stream, ligados a esse servi\u00e7o"
+                    ],
+                    "teams": [
+                        "Lista,  possivelmente vazia, de URLs para locais de reuni\u00e3o no teams, ligados a esse servi\u00e7o"
+                    ],
+                    "time": [
+                        "Lista de faixas de hor\u00e1rios em que o servi\u00e7o funciona",
+                        "10:00-12:00",
+                        "14:00-18:00"
+                    ],
+                    "twitter": [
+                        "Lista,  possivelmente vazia, de tweets ou usu\u00e1rios vinculados a esse servi\u00e7o"
+                    ],
+                    "usage": "Regras ou condi\u00e7\u00f5es de uso do servi\u00e7o",
+                    "wikidata": [
+                        "Lista,  possivelmente vazia, de URLs para elementos sem\u00e2nticos associados ao servi\u00e7o, presentes na Wikidada"
+                    ],
+                    "wikipedia": [
+                        "Lista,  possivelmente vazia, de URLs para p\u00e1ginas na Wikipedia que melhor descrevem ou categorizam o servi\u00e7o"
+                    ],
+                    "youtube": [
+                        "Lista,  possivelmente vazia, de v\u00eddeos ou canais no youtube, ligados a esse servi\u00e7o"
+                    ]
+                }
+            ],
+            "url": "Insira aqui a URL para a p\u00e1gina do grupo na Wikiversity, que deve ser estruturada conforme os exemplos"
+        },
+        {
+            "api": "http://20.197.228.14:5000/",
+            "assets": [
+                {
+                    "category": [],
+                    "description": "Melhorando aprova\u00e7\u00e3o em C\u00e1lculo",
+                    "facebook": [],
+                    "instagram": [],
+                    "name": "V\u00eddeo de prova\u00e7\u00e3o po\u00e9tica 1",
+                    "osm": [],
+                    "stream": [],
+                    "teams": [],
+                    "twitter": [],
+                    "usage": "Aberto ao p\u00fablico",
+                    "wikidata": [],
+                    "wikipedia": [],
+                    "youtube": [
+                        "https://www.youtube.com/watch?v=7cfNcn-zge0"
+                    ]
+                }
+            ],
+            "description": "O grupo Grupo Explorat\u00f3rio Fict\u00edcio de Poesia \u00e0 Sombra da \u00c1rvore Torta ainda n\u00e3o existe de fato. Ele evidencia a possibilidade de que eventos culturais de poesia possam ser feitos \u00e0 sombra da \u00e1rvore torta que fica nos Jardins do Campus Darcy Ribeiro da Universidade de Bras\u00edlia. As atividades presenciais desse grupo ocorrem junto \u00e0 Arvore Torta [1], [2]. A ideia \u00e9 que o grupo atue como uma organiza\u00e7\u00e3o do tipo GLAM (Galeria, Biblioteca, Arquivo ou Museu). O grupo \u00e9 integrado ao sistema de informa\u00e7\u00e3o para Promo\u00e7\u00e3o da Frui\u00e7\u00e3o Cultural nos Campi UnB.",
+            "events": [
+                {
+                    "category": "",
+                    "date": "2021-04-25",
+                    "description": "Demonstra\u00e7\u00e3o de como criar poesias",
+                    "facebook": [],
+                    "instagram": [],
+                    "name": "Apresenta\u00e7\u00e3o de poesias \u00e9picas",
+                    "osm": [
+                        "https://www.openstreetmap.org/node/8645588741"
+                    ],
+                    "stream": [],
+                    "teams": [],
+                    "timeInterval": "10:00-12:00",
+                    "twitter": [],
+                    "usage": "",
+                    "wikidata": [
+                        "https://www.wikidata.org/wiki/Q106568853",
+                        "https://www.wikidata.org/wiki/Q482",
+                        "https://www.wikidata.org/wiki/Q40444998"
+                    ],
+                    "wikipedia": [
+                        "https://pt.wikipedia.org/wiki/Poesia_%C3%A9pica"
+                    ],
+                    "youtube": []
+                }
+            ],
+            "members": [],
+            "name": "Grupo Explorat\u00f3rio Fict\u00edcio de Poesia \u00e0 Sombra da \u00c1rvore Torta",
+            "services": [],
+            "url": "https://pt.wikiversity.org/wiki/Grupo_Explorat%C3%B3rio_Fict%C3%ADcio_de_Poesia_%C3%A0_Sombra_da_%C3%81rvore_Torta"
+        },
+        {
+            "api": "http://20.197.228.14:5000/",
+            "assets": [
+                {
+                    "category": "",
+                    "description": "Aula pr\u00e1tica sobre uso do Editor ID do OpenStreetMap para registrar locais no espa\u00e7o geogr\u00e1fico",
+                    "facebook": [],
+                    "instagram": [],
+                    "name": "V\u00eddeo de Aula sobre OpenStreetMap",
+                    "osm": [],
+                    "stream": [
+                        "https://web.microsoftstream.com/video/eac4349c-95c9-4d36-b077-7b807c79fa45"
+                    ],
+                    "teams": [],
+                    "twitter": [],
+                    "usage": "Aberto ao p\u00fablico",
+                    "wikidata": [],
+                    "wikipedia": [],
+                    "youtube": []
+                }
+            ],
+            "description": "O grupo Sistemas de Informa\u00e7\u00e3o Territoriais \u00e9 uma organiza\u00e7\u00e3o do tipo GLAM (Galeria, Biblioteca, Arquivo ou Museu) , vinculado \u00e0 realiza\u00e7\u00e3o da disciplina Sistemas de Informa\u00e7\u00e3o. Visa promover a frui\u00e7\u00e3o da cultura de produ\u00e7\u00e3o de conte\u00fados de interessse cultural sobre o tema sistemas de informa\u00e7\u00e3o voltados \u00e0 valoriza\u00e7\u00e3o dos territ\u00f3rios humanos onde popula\u00e7\u00f5es desfrutam de um territ\u00f3rio, produzem cultura, realizam eventos, prestam servi\u00e7os e disp\u00f5em de acervos f\u00edsicos ou digitais. O grupo \u00e9 integrado ao sistema de informa\u00e7\u00e3o para Promo\u00e7\u00e3o da Frui\u00e7\u00e3o Cultural nos Campi UnB.",
+            "events": [
+                {
+                    "category": [
+                        ""
+                    ],
+                    "date": [
+                        "2021-04-16"
+                    ],
+                    "description": "Aula pr\u00e1tica sobre uso do OpenStreetMap para registrar locais no espa\u00e7o geogr\u00e1fico",
+                    "facebook": [],
+                    "instagram": [],
+                    "name": "Aula OpenStreetMap",
+                    "osm": [],
+                    "stream": [],
+                    "teams": [
+                        "https://teams.microsoft.com/l/meetup-join/19%3aef1765557bc6420b84916c7452cd796d%40thread.tacv2/1612205014778?context=%7b%22Tid%22%3a%22ec359ba1-630b-4d2b-b833-c8e6d48f8059%22%2c%22Oid%22%3a%22672cf65d-2ca8-4565-8134-636e46e387de%22%7d || https://web.microsoftstream.com/video/eac4349c-95c9-4d36-b077-7b807c79fa45"
+                    ],
+                    "time": [
+                        "10:00-12:00"
+                    ],
+                    "twitter": [],
+                    "usage": "Estar matriculado ou ser aluno de gradua\u00e7\u00e3o da UnB",
+                    "wikidata": [],
+                    "wikipedia": [],
+                    "youtube": []
+                }
+            ],
+            "members": [
+                "https://pt.wikiversity.org/w/index.php?title=Utilizador:Drenno",
+                "https://pt.wikiversity.org/wiki/Utilizador:Jhcfernandes"
+            ],
+            "name": "Sistemas de Informa\u00e7\u00e3o Territoriais",
+            "services": [
+                {
+                    "category": [
+                        ""
+                    ],
+                    "days": [
+                        "3",
+                        "5"
+                    ],
+                    "description": "Aula de sistema de informa\u00e7\u00e3o",
+                    "facebook": [
+                        "https://www.facebook.com/Sala-13-do-PAT-na-UNB-101669152064183"
+                    ],
+                    "instagram": [],
+                    "name": "Aula regular",
+                    "osm": [
+                        "https://www.openstreetmap.org/node/8632388672"
+                    ],
+                    "stream": [],
+                    "teams": [
+                        "https://teams.microsoft.com/l/meetup-join/19%3aef1765557bc6420b84916c7452cd796d%40thread.tacv2/1612205014778?context=%7b%22Tid%22%3a%22ec359ba1-630b-4d2b-b833-c8e6d48f8059%22%2c%22Oid%22%3a%22672cf65d-2ca8-4565-8134-636e46e387de%22%7d"
+                    ],
+                    "time": [
+                        "10:00-12:00"
+                    ],
+                    "twitter": [],
+                    "usage": "Estar matriculado ou ser aluno de gradua\u00e7\u00e3o da UnB",
+                    "wikidata": [
+                        "https://www.wikidata.org/wiki/Q106508747"
+                    ],
+                    "wikipedia": [],
+                    "youtube": []
+                }
+            ],
+            "url": "https://pt.wikiversity.org/wiki/Sistemas_de_Informa%C3%A7%C3%A3o_Territoriais"
+        }
+    ]
+}

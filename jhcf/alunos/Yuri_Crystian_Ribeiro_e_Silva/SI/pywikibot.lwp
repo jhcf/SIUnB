@@ -1,0 +1,20 @@
+#LWP-Cookies-2.0
+Set-Cookie3: GeoIP="BR:DF:Bras__lia:-15.78:-47.93:v4"; path="/"; domain=".wikiversity.org"; path_spec; domain_dot; secure; discard; version=0
+Set-Cookie3: WMF-Last-Access-Global="18-May-2021"; path="/"; domain=".wikiversity.org"; path_spec; domain_dot; secure; expires="2021-06-19 12:00:00Z"; HttpOnly=None; version=0
+Set-Cookie3: centralauth_Session=d99efa3912eb6f483c9bd2978a8b409b; path="/"; domain=".wikiversity.org"; path_spec; domain_dot; secure; discard; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: centralauth_Token=b3056106a3899acb439827d0b8d47515; path="/"; domain=".wikiversity.org"; path_spec; domain_dot; secure; expires="2022-05-18 12:59:03Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: centralauth_User=SI2021; path="/"; domain=".wikiversity.org"; path_spec; domain_dot; secure; expires="2022-05-18 12:59:03Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: centralauth_ss0-Token=b3056106a3899acb439827d0b8d47515; path="/"; domain=".wikiversity.org"; path_spec; domain_dot; secure; expires="2022-05-18 12:59:03Z"; HttpOnly=None; version=0
+Set-Cookie3: centralauth_ss0-User=SI2021; path="/"; domain=".wikiversity.org"; path_spec; domain_dot; secure; expires="2022-05-18 12:59:03Z"; HttpOnly=None; version=0
+Set-Cookie3: ss0-centralauth_Session=d99efa3912eb6f483c9bd2978a8b409b; path="/"; domain=".wikiversity.org"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: UseCDNCache=false; path="/"; domain="pt.wikiversity.org"; path_spec; secure; expires="2021-05-18 12:59:13Z"; HttpOnly=None; version=0
+Set-Cookie3: UseDC=master; path="/"; domain="pt.wikiversity.org"; path_spec; secure; expires="2021-05-18 12:59:13Z"; HttpOnly=None; version=0
+Set-Cookie3: WMF-Last-Access="18-May-2021"; path="/"; domain="pt.wikiversity.org"; path_spec; secure; expires="2021-06-19 12:00:00Z"; HttpOnly=None; version=0
+Set-Cookie3: cpPosIndex="1%401621342743%234046be62f78d38d9b07932a651faea0a"; path="/"; domain="pt.wikiversity.org"; path_spec; secure; expires="2021-05-18 12:59:13Z"; HttpOnly=None; version=0
+Set-Cookie3: loginnotify_prevlogins="2021-1hlfgg3-22d298quxjghpogaw3cgk1gqn4ff4xq"; path="/"; domain="pt.wikiversity.org"; path_spec; secure; expires="2021-11-14 12:59:03Z"; HttpOnly=None; version=0
+Set-Cookie3: ptwikiversitySession=q0nus4pdsispekn2l0pgsl802vee67ph; path="/"; domain="pt.wikiversity.org"; path_spec; secure; discard; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: ptwikiversityUserID=31473; path="/"; domain="pt.wikiversity.org"; path_spec; secure; expires="2022-05-18 12:59:03Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: ptwikiversityUserName=SI2021; path="/"; domain="pt.wikiversity.org"; path_spec; secure; expires="2022-05-18 12:59:03Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: ptwikiversityss0-UserID=31473; path="/"; domain="pt.wikiversity.org"; path_spec; secure; expires="2022-05-18 12:59:03Z"; HttpOnly=None; version=0
+Set-Cookie3: ptwikiversityss0-UserName=SI2021; path="/"; domain="pt.wikiversity.org"; path_spec; secure; expires="2022-05-18 12:59:03Z"; HttpOnly=None; version=0
+Set-Cookie3: ss0-ptwikiversitySession=q0nus4pdsispekn2l0pgsl802vee67ph; path="/"; domain="pt.wikiversity.org"; path_spec; secure; discard; HttpOnly=None; version=0
