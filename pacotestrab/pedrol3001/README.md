@@ -1,8 +1,9 @@
 # openqrunb
 
-A new Flutter project.
+Como rodar:
 
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+     Baixar o [flutter sdk](https://flutter.dev/docs/get-started/install)
+     Checar compatibilidade: flutter devices e flutter doctor
+     Baixar pacotes: flutter pub get
+     Rodar projeto: flutter run
+      
