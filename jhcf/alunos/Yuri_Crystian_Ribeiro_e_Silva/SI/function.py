@@ -5,17 +5,25 @@ import pywikibot as pwb
 import re
 
 
-def clear_page(page):
+def clear_page(page):  #essa funcao limpa o texto da pagina e salva ela e salva com a flag de bot ativada, ela recebe apenas a pagina recuperada pelo bot
     page.text = ""
-    page.save()
+    save_page(page)
 
-def add_section(section,text,add=''):
+def save_page(page): # essa funcao salva a pagin com a flag de bot ativada, ela recebe a pagina recuperada pelo bot
+    page.save(botflag=True)
+#essa funcao adiciona uma nova secao com um texto abaixo
+#os parametros sao
+#section = nome da secao a ser adicionada
+#text = o texto da pagina a ser alterada
+#add = o texto a ser adicionado, nulo por padrao
+#o retorno dela e o texto alterado
+def add_section(section,text,add=''): 
     text += '\n=='+section+'==\n'
     text += add
     return text
-    
 
-
+#essa funcao recebe uma lista de items, qual sera o sufixo e prefixo de cada item junto a uma flag dizendo se isso se encontra na ultima coluna da tabela
+#o retorno dela e essa lista no formato de uma coluna da tabela
 def list_items(items, prefix='', sufix='',last=False):
     aux = ""
     if len(items) == 0:
@@ -43,6 +51,8 @@ def list_items(items, prefix='', sufix='',last=False):
                     aux += prefix+i+sufix
                 aux+='||'
     return aux
+#essa funcao recebe uma tabela e um json de uma secao a ser convertida para tabela e retorna a tabela dessa secao
+#exemplo json['groups'][x]['assets'] retornaria a tabela dos acervos
 def gen_table(text,json,caption):
     text += '\n{|class ="wikitable"\n'
     if caption == 'assets':
