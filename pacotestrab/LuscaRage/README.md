@@ -1,4 +1,4 @@
-Essa aplicação pega os eventos contidos em um .Json as converte em eventos e os adicionam a um calendário criando um arquivo de saída .ics (formato de calendário compatível com Google Calendar/Agenda e Windows Calendar).
+Essa aplicação pega os eventos contidos em um .Json as converte em Events() e os adicionam a um calendário criando um arquivo de saída .ics (formato de calendário compatível com Google Calendar/Agenda e Windows Calendar).
 
 Para executar são necessárias as bibliotecas ics e pandas:
 
