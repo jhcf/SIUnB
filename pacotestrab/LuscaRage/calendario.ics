@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Categorias:categorias como\, oficina\, poesia\, etc\nDescrição:descriçãoo\nwikidata:wikidata se tiver\nwikipedia:wikipedia se tiver\nfacebook:facebook se tiver\ninstagram:instagram se tiver\ntwitter:twitter se tiver\nyoutube:youtube se tiver\nteams:teams se tiver\nstream:stream se tiver
+DTEND:20210509T150000Z
+LOCATION:lugar no osm se tiver
+DTSTART:20210509T130000Z
+SUMMARY:[3/3]Teste tipo 2
+UID:2a4ed620-755e-420d-bdc0-1d8cb5a8116a@2a4e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Categorias:categorias como\, oficina\, poesia\, etc\nDescrição:descriçãoo\nwikidata:wikidata se tiver\nwikipedia:wikipedia se tiver\nfacebook:facebook se tiver\ninstagram:instagram se tiver\ntwitter:twitter se tiver\nyoutube:youtube se tiver\nteams:teams se tiver\nstream:stream se tiver
+DTEND:20210508T150000Z
+LOCATION:lugar no osm se tiver
+DTSTART:20210508T130000Z
+SUMMARY:[2/3]Teste tipo 2
+UID:efbedeef-4c86-4a73-8f66-9c75d7d8ef68@efbe.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Categorias:categorias como\, oficina\, poesia\, etc\nDescrição:descrição\nwikidata:wikidata se tiver\nwikipedia:wikipedia se tiver\nfacebook:facebook se tiver\ninstagram:instagram se tiver\ntwitter:twitter se tiver\nyoutube:youtube se tiver\nteams:teams se tiver\nstream:stream se tiver
+DTEND:20210507T150000Z
+LOCATION:lugar no osm se tiver
+DTSTART:20210507T130000Z
+SUMMARY:nome
+UID:0e582aee-4eda-4540-b08a-dd6e58ebf760@0e58.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Descrição:Demonstração de como criar poesias\nwikidata:https://www.wikidata.org/wiki/Q106568853\, https://www.wikidata.org/wiki/Q482\, https://www.wikidata.org/wiki/Q40444998\nwikipedia:https://pt.wikipedia.org/wiki/Poesia_%C3%A9pica\n
+DTEND:20210425T150000Z
+LOCATION:https://www.openstreetmap.org/node/8645588741
+DTSTART:20210425T130000Z
+SUMMARY:Apresentação de poesias épicas
+UID:422a9c70-885d-489c-931c-e06632858d72@422a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Categorias:categorias como\, oficina\, poesia\, etc\nDescrição:descriçãoo\nwikidata:wikidata se tiver\nwikipedia:wikipedia se tiver\nfacebook:facebook se tiver\ninstagram:instagram se tiver\ntwitter:twitter se tiver\nyoutube:youtube se tiver\nteams:teams se tiver\nstream:stream se tiver
+DTEND:20210507T150000Z
+LOCATION:lugar no osm se tiver
+DTSTART:20210507T130000Z
+SUMMARY:[1/3]Teste tipo 2
+UID:8072779f-27dc-405d-83d3-0ca40753e7e4@8072.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Descrição:Aula prática sobre uso do OpenStreetMap para registrar locais no espaço geográfico\nteams:https://teams.microsoft.com/l/meetup-join/19%3aef1765557bc6420b84916c7452cd796d%40thread.tacv2/1612205014778?context=%7b%22Tid%22%3a%22ec359ba1-630b-4d2b-b833-c8e6d48f8059%22%2c%22Oid%22%3a%22672cf65d-2ca8-4565-8134-636e46e387de%22%7d || https://web.microsoftstream.com/video/eac4349c-95c9-4d36-b077-7b807c79fa45\n
+DTEND:20210416T150000Z
+DTSTART:20210416T130000Z
+SUMMARY:Aula OpenStreetMap
+UID:ec8975d6-50b2-4933-9768-1831f113b4ca@ec89.org
+END:VEVENT
+END:VCALENDAR
