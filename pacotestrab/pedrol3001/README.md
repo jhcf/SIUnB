@@ -2,7 +2,7 @@
 
 ### Como rodar:
 
-+ #### Baixar a sdk do flutter: ttps://flutter.dev/docs/get-started/install
++ #### Baixar a sdk do flutter: [https://flutter.dev/docs/get-started/install]
      
 + #### Checar compatibilidade: 
 ```
